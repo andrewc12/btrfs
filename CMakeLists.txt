@@ -328,10 +328,8 @@ if(WITH_TEST)
         find_package(fmt REQUIRED)
     endif()
 
-    configure_file(src/tests/test.rc.in test.rc)
 
     set(TEST_SRC_FILES src/tests/test.cpp
-        ${CMAKE_CURRENT_BINARY_DIR}/test.rc
         src/tests/create.cpp
         src/tests/supersede.cpp
         src/tests/overwrite.cpp
